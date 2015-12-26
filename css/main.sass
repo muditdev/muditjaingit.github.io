@@ -1,0 +1,166 @@
+@import "_include/grid"
+@import "_include/global"
+//styling header
+.about-banner
+  //overflow: auto
+  background-image: url(../media/images/about-me-banner.jpg)
+  //height: 700px
+  background-size:cover
+  background-position: center
+  padding-top: 50px
+  height: 100%
+
+  .logo
+    float: left
+    font-family: $lato
+    font-size: 1.5em
+    font-weight: bold
+    opacity: .65
+    letter-spacing: 8px
+    margin-left: 10px
+    -webkit-transform : rotateY(180deg)
+    -moz-transform:rotateY(180deg)
+    -o-transform:rotateY(180deg)
+    -ms-transform:rotateY(180deg)
+    transform:rotateY(180deg)
+    unicode-bidi:bidi-override
+    direction:rtl
+
+nav.main-navigation
+  float: right
+  margin-right: 10px
+nav ul li
+  display: inline-block
+
+  a
+    font-family: $lato
+    font-size: 1.3em
+    font-weight: 900
+    letter-spacing: 4px
+    opacity: .6
+    margin-left: 20px
+    .active
+      visibility: hidden
+      margin: 12px auto
+      text-align: center
+      width: 20px
+      height: 2px
+      background: rgba(0,0,0,.3)
+    &:hover
+      opacity: .9
+      .active
+        visibility: visible
+
+.banner-content
+  text-transform: uppercase
+  margin:15% 0 10% 6%
+  font-family: $lato
+
+  p
+   letter-spacing: 5px
+   font-weight: 600
+   line-height: 30px
+   font-size: 1.5em
+   color: rgba(0,0,0,.8)
+  h1
+    margin-top: 20px
+    color: #fff
+    background: rgba(0,0,0,.8)
+    display: inline-block
+    font-size: 3em
+    letter-spacing: 10px
+    padding:15px 13px 15px 20px
+  h2
+    font-size: 4.5em
+    letter-spacing: 15px
+    font-weight: 900
+    color:rgba(0,0,0,.8)
+    display: block
+    padding:7px 13px 15px 20px
+
+.page-title
+  text-align: center
+  position: relative
+  top: 20px
+  font-size: 1.5em
+  color:$dark_text
+  a
+    text-transform: uppercase
+    font-family: $lato
+    font-size: 1.1em
+    font-weight: 900
+    background: #fff
+    display: inline-block
+    letter-spacing: 8px
+    margin: 0 auto
+    border-radius: 6px
+    padding: 13px 46px
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.2)
+
+section.about-content
+  .about-me-description
+    margin-top: 85px
+    text-align: center
+    img
+      border-radius: 10px
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15)
+    p
+      margin-top: 60px
+      font-weight: 100
+      font-size: 14px
+      letter-spacing: 2px
+      line-height: 32px
+      color: rgba(0, 0, 0, 0.9)
+
+section.work-journey
+  margin-top: 40px
+  figure
+    margin: 40px
+    img
+      width: 100px
+  article.journey
+    h1
+      font-family: $lato
+      font-size: 30px
+      letter-spacing: 13px
+      font-weight: 600
+      line-height: 80px
+
+.j-detail
+  font-family: $lato
+  font-weight: 600
+  font-size: 1.2em
+  letter-spacing: 3px
+  line-height: 19px
+
+  p
+    margin-top:50px
+  p:first-child
+    margin-top:18px!important
+
+.j-detail.j-right
+  padding: 0 10px 20px 0
+.j-detail.j-left
+  padding: 0 0 20px 10px
+
+
+
+
+
+.footer
+  h5
+    letter-spacing: 3px
+    font-size: 1.2em
+
+  .social-links
+    margin-top: 10px
+    a
+      font-size: .8em
+      letter-spacing: 2px
+      font-family: 'Lato', sans-serif
+      font-weight: 600
+      margin-right: 10px
+      opacity: .6
+
+      &:hover
+        opacity: 1

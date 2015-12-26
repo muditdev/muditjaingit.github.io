@@ -706,8 +706,16 @@ section.work-journey article.journey h1 {
   line-height: 19px;
 }
 
+.j-detail:hover {
+  border-color: #27AF81;
+}
+
 .j-detail p {
   margin-top: 50px;
+}
+
+.j-detail p:hover {
+  color: #27AF81;
 }
 
 .j-detail p:first-child {

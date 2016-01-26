@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    include _include/head
+  body
+    main.project-pg
+      include _include/projects-header
+      //portfolio-navigation
+      section.container.row
+        nav.portfolio-nav
+          ul
+            li: a(href="") web
+            li: a(href="") mobile
+            li: a(href="") landing
+            li: a(href="") branding
+            li: a(href="") graphics
+          
+      section.main-container.portfolio-container.portfolio-wrapper
+        include _include/portfolio/web
+        include _include/portfolio/mobile         
+          
+          
+                               
+            
+          
+    
+    
+                
+    include _include/footer
+    script(type="text/javascript").
+      $(document).ready(function(){
+        $('title').text('Mudit Jain Projects');
+      });
+    
+     
+    
+    

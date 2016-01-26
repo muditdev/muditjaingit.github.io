@@ -1,9 +1,11 @@
 @import "_include/grid"
 @import "_include/global"
+@import "_include/portfolio"
 //styling header
-.about-banner
-  //overflow: auto
+.about-banner-bg
   background-image: url(../media/images/about-me-banner.jpg)
+.top-banner
+  //overflow: auto
   //height: 700px
   background-size:cover
   background-position: center
@@ -29,7 +31,7 @@
 nav.main-navigation
   float: right
   margin-right: 10px
-nav ul li
+nav.main-navigation ul li
   display: inline-block
 
   a
@@ -51,7 +53,7 @@ nav ul li
       .active
         visibility: visible
 
-.banner-content
+.banner-content-about
   text-transform: uppercase
   margin:15% 0 10% 6%
   font-family: $lato
@@ -129,9 +131,10 @@ section.work-journey
 .j-detail
   font-family: $lato
   font-weight: 600
-  font-size: 1.2em
+  font-size: 1.6em
   letter-spacing: 3px
-  line-height: 19px
+  line-height: 26px
+  text-transform: capitalize
   &:hover
     border-color: #27AF81
 

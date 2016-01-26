@@ -224,6 +224,43 @@ $toast-pulls: true !default;
     &.#{$toast-grid-column-namespace}--m-3-of-4 {
       width: percentage(3/4);
     }
+      //12 column grid for medium devices
+    &.#{$toast-grid-column-namespace}--m-1-of-12 {
+      width: percentage(1/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-2-of-12 {
+      width: percentage(2/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-3-of-12 {
+      width: percentage(3/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-4-of-12 {
+      width: percentage(4/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-5-of-12 {
+      width: percentage(5/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-6-of-12 {
+      width: percentage(6/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-7-of-12 {
+      width: percentage(7/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-8-of-12 {
+      width: percentage(8/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-9-of-12 {
+      width: percentage(9/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-10-of-12 {
+      width: percentage(10/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-11-of-12 {
+      width: percentage(11/12);
+    }
+    &.#{$toast-grid-column-namespace}--m-12-of-12 {
+      width: percentage(12/12);
+    }
   }
 
   @media (max-width: $toast-breakpoint-small) {
@@ -255,6 +292,44 @@ $toast-pulls: true !default;
     &.#{$toast-grid-column-namespace}--s-3-of-4 {
       width: percentage(3/4);
     }
+    //12 column grid for small devices
+    &.#{$toast-grid-column-namespace}--s-1-of-12 {
+    width: percentage(1/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-2-of-12 {
+    width: percentage(2/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-3-of-12 {
+    width: percentage(3/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-4-of-12 {
+    width: percentage(4/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-5-of-12 {
+    width: percentage(5/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-6-of-12 {
+    width: percentage(6/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-7-of-12 {
+    width: percentage(7/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-8-of-12 {
+    width: percentage(8/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-9-of-12 {
+    width: percentage(9/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-10-of-12 {
+    width: percentage(10/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-11-of-12 {
+    width: percentage(11/12);
+    }
+    &.#{$toast-grid-column-namespace}--s-12-of-12 {
+    width: percentage(12/12);
+    }
+
   }
 }
 

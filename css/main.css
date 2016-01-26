@@ -346,6 +346,42 @@
   .col.col--m-3-of-4 {
     width: 75%;
   }
+  .col.col--m-1-of-12 {
+    width: 8.33333%;
+  }
+  .col.col--m-2-of-12 {
+    width: 16.66667%;
+  }
+  .col.col--m-3-of-12 {
+    width: 25%;
+  }
+  .col.col--m-4-of-12 {
+    width: 33.33333%;
+  }
+  .col.col--m-5-of-12 {
+    width: 41.66667%;
+  }
+  .col.col--m-6-of-12 {
+    width: 50%;
+  }
+  .col.col--m-7-of-12 {
+    width: 58.33333%;
+  }
+  .col.col--m-8-of-12 {
+    width: 66.66667%;
+  }
+  .col.col--m-9-of-12 {
+    width: 75%;
+  }
+  .col.col--m-10-of-12 {
+    width: 83.33333%;
+  }
+  .col.col--m-11-of-12 {
+    width: 91.66667%;
+  }
+  .col.col--m-12-of-12 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -367,6 +403,42 @@
   }
   .col.col--s-3-of-4 {
     width: 75%;
+  }
+  .col.col--s-1-of-12 {
+    width: 8.33333%;
+  }
+  .col.col--s-2-of-12 {
+    width: 16.66667%;
+  }
+  .col.col--s-3-of-12 {
+    width: 25%;
+  }
+  .col.col--s-4-of-12 {
+    width: 33.33333%;
+  }
+  .col.col--s-5-of-12 {
+    width: 41.66667%;
+  }
+  .col.col--s-6-of-12 {
+    width: 50%;
+  }
+  .col.col--s-7-of-12 {
+    width: 58.33333%;
+  }
+  .col.col--s-8-of-12 {
+    width: 66.66667%;
+  }
+  .col.col--s-9-of-12 {
+    width: 75%;
+  }
+  .col.col--s-10-of-12 {
+    width: 83.33333%;
+  }
+  .col.col--s-11-of-12 {
+    width: 91.66667%;
+  }
+  .col.col--s-12-of-12 {
+    width: 100%;
   }
 }
 
@@ -452,6 +524,28 @@
   display: block;
 }
 
+/*importing fonts*/
+@font-face {
+  font-family: 'brandon';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../media/fonts/brandon-medium.ttf");
+}
+
+@font-face {
+  font-family: 'brandon';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../media/fonts/brandon-bold.ttf");
+}
+
+@font-face {
+  font-family: 'brandon';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../media/fonts/brandon-black.ttf");
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -529,7 +623,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: "brandon", sans-serif;
   font-weight: 600;
 }
 
@@ -546,17 +640,196 @@ a {
   text-align: center;
 }
 
-.about-banner {
+.project-banner-bg {
+  background-image: url(../media/images/portfolio-banner.jpg);
+}
+
+.banner-content-projects {
+  padding: 19vh 0;
+  text-transform: uppercase;
+  font-family: "brandon", sans-serif;
+  text-align: center;
+}
+
+.banner-content-projects h1 {
+  display: inline-block;
+  border: 7px solid;
+  font-size: 5em;
+  letter-spacing: 13px;
+  padding: 27px 60px;
+}
+
+.banner-content-projects h2 {
+  letter-spacing: 5px;
+  font-size: 2em;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+}
+
+/*styling portfolio navigation*/
+nav.portfolio-nav {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-size: 1.5em;
+  font-family: "brandon", sans-serif;
+  font-weight: 900;
+}
+
+nav.portfolio-nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav.portfolio-nav ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 3px;
+  transition: all 300ms;
+}
+
+nav.portfolio-nav ul li a:hover {
+  color: black;
+}
+
+/* portfolio */
+.portfolio-container {
+  padding-left: 15px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 641px) {
+  .portfolio-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .portfolio-container {
+    width: 85%;
+  }
+}
+
+.portfolio {
+  font-size: 1.5em;
+  margin-top: 230px;
+}
+
+.portfolio-web .load-more {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0db376;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.portfolio-title .icon {
+  font-size: 40px;
+}
+
+.portfolio-title h3 {
+  text-transform: uppercase;
+  margin-top: 40px;
+  color: #0db376;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 90px;
+  position: relative;
+  z-index: 99999;
+  top: 18px;
+}
+
+.project-wrapper {
+  height: auto;
+  border: solid #0db376;
+  padding: 70px;
+  padding-left: 67px;
+}
+
+.project-wrapper .row--no-gutter {
+  margin: -3px 0;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: -3px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  transition: all 1s;
+  -webkit-filter: grayscale(0.9) contrast(0.6);
+}
+
+.project .project-hover {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.project .project-hover h3 {
+  font-size: .9em;
+  font: "brandon", sans-serif;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(13, 179, 118, 0.7);
+  padding: 7px 13px 7px 13px;
+  transition: all 400ms;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project:hover img {
+  -webkit-filter: grayscale(0) contrast(1);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.project:hover .project-hover {
+  top: 35%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.project:hover h3:hover {
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
+}
+
+.about-banner-bg {
   background-image: url(../media/images/about-me-banner.jpg);
+}
+
+.top-banner {
   background-size: cover;
   background-position: center;
   padding-top: 50px;
   height: 100%;
 }
 
-.about-banner .logo {
+.top-banner .logo {
   float: left;
-  font-family: "Lato", sans-serif;
+  font-family: "brandon", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   opacity: .65;
@@ -574,12 +847,12 @@ nav.main-navigation {
   margin-right: 10px;
 }
 
-nav ul li {
+nav.main-navigation ul li {
   display: inline-block;
 }
 
-nav ul li a {
-  font-family: "Lato", sans-serif;
+nav.main-navigation ul li a {
+  font-family: "brandon", sans-serif;
   font-size: 1.3em;
   font-weight: 900;
   letter-spacing: 4px;
@@ -587,7 +860,7 @@ nav ul li a {
   margin-left: 20px;
 }
 
-nav ul li a .active {
+nav.main-navigation ul li a .active {
   visibility: hidden;
   margin: 12px auto;
   text-align: center;
@@ -596,21 +869,21 @@ nav ul li a .active {
   background: rgba(0, 0, 0, 0.3);
 }
 
-nav ul li a:hover {
+nav.main-navigation ul li a:hover {
   opacity: .9;
 }
 
-nav ul li a:hover .active {
+nav.main-navigation ul li a:hover .active {
   visibility: visible;
 }
 
-.banner-content {
+.banner-content-about {
   text-transform: uppercase;
   margin: 15% 0 10% 6%;
-  font-family: "Lato", sans-serif;
+  font-family: "brandon", sans-serif;
 }
 
-.banner-content p {
+.banner-content-about p {
   letter-spacing: 5px;
   font-weight: 600;
   line-height: 30px;
@@ -618,7 +891,7 @@ nav ul li a:hover .active {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.banner-content h1 {
+.banner-content-about h1 {
   margin-top: 20px;
   color: #fff;
   background: rgba(0, 0, 0, 0.8);
@@ -628,7 +901,7 @@ nav ul li a:hover .active {
   padding: 15px 13px 15px 20px;
 }
 
-.banner-content h2 {
+.banner-content-about h2 {
   font-size: 4.5em;
   letter-spacing: 15px;
   font-weight: 900;
@@ -647,7 +920,7 @@ nav ul li a:hover .active {
 
 .page-title a {
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: "brandon", sans-serif;
   font-size: 1.1em;
   font-weight: 900;
   background: #fff;
@@ -691,7 +964,7 @@ section.work-journey figure img {
 }
 
 section.work-journey article.journey h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "brandon", sans-serif;
   font-size: 30px;
   letter-spacing: 13px;
   font-weight: 600;
@@ -699,11 +972,12 @@ section.work-journey article.journey h1 {
 }
 
 .j-detail {
-  font-family: "Lato", sans-serif;
+  font-family: "brandon", sans-serif;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.6em;
   letter-spacing: 3px;
-  line-height: 19px;
+  line-height: 26px;
+  text-transform: capitalize;
 }
 
 .j-detail:hover {

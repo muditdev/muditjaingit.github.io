@@ -57,34 +57,18 @@ nav.portfolio-nav
   font-size: 1.5em
   margin-top: 230px
 
-.portfolio-web
-  .load-more
-    font-size: 14px
-    letter-spacing: 2px
-    color: $web
-    margin-top: 20px
-    text-transform: uppercase
-
 .portfolio-title
   .icon
     font-size: 40px
   h3
     text-transform: uppercase
     margin-top: 40px
-    color: $web
     background: #fff
     display: inline-block
     padding: 10px 90px
     position: relative
     z-index: 99999
     top:18px
-.project-wrapper
-  height: auto
-  border: solid $web
-  padding: 70px
-  padding-left:67px
-  .row--no-gutter
-    margin: -3px 0
 .project
   position: relative
   width: 100%
@@ -110,7 +94,6 @@ nav.portfolio-nav
       text-transform: uppercase
       letter-spacing: 3px
       color: rgba(255, 255, 255, .8)
-      background: rgba(13, 179, 118, .7)
       padding: 7px 13px 7px 13px
       //border: 2px solid rgba(0, 0, 0, .9)
       transition: all 400ms
@@ -125,3 +108,55 @@ nav.portfolio-nav
     opacity: 1
   h3:hover
     box-shadow: 0 0 13px 0 rgba(0, 0, 0, .4)
+
+.portfolio .load-more
+  font-size: 14px
+  letter-spacing: 2px
+  margin-top: 20px
+  text-transform: uppercase
+
+/*Specify web section*/
+.portfolio-web
+  .portfolio-title h3
+    color: $web
+  .project-wrapper
+    border: solid $web
+    height: auto
+    padding: 70px
+    //padding-left:67px
+    .row--no-gutter
+      margin: -3px 0
+  .project
+    .project-hover
+      background: rgba(13, 179, 118, .7)
+  .load-more
+    color: $web
+
+
+/*Specify Mobile section*/
+
+.portfolio-mobile
+  .portfolio-title h3
+    color: $mobile
+  .project-wrapper
+    border: solid $mobile
+    height: auto
+    padding: 30px 30px
+    //padding-left:67px
+  .project
+    width: 90%
+    margin: 15px auto
+    border: 1px solid rgba(58, 84, 101, .17)
+    border-radius: 15px
+    padding: 15px
+    img
+      border: solid #fff
+      border-radius: 15px
+    .project-hover
+      background: rgba(58, 84, 101, .7)
+  .load-more
+    color: $mobile
+
+  .project:hover
+    img
+      box-shadow: 0 18px 20px -10px rgba(0, 0, 0, .4)

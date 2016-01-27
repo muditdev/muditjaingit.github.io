@@ -1,5 +1,11 @@
 $web:#0db376
 $mobile:#3a5465
+$landing:#3d3931
+$branding: #000
+$graphic:#de703c
+$flash:#ff304f
+
+
 
 .project-banner-bg
   background-image: url(../media/images/portfolio-banner.jpg)
@@ -55,7 +61,8 @@ nav.portfolio-nav
     width: 85%
 .portfolio
   font-size: 1.5em
-  margin-top: 230px
+  margin-top: 200px
+  padding-top: 30px
 
 .portfolio-title
   .icon
@@ -79,8 +86,9 @@ nav.portfolio-nav
   img
     width: 100%
     transition: all 1s
-    -webkit-filter: grayscale(.9) contrast(0.6)
+    -webkit-filter: grayscale(.9) contrast(0.6) brightness(1.15) opacity(.9)
   .project-hover
+    border-radius: 3px
     position: absolute
     top: 0%
     left: 50%
@@ -120,7 +128,7 @@ nav.portfolio-nav
   .portfolio-title h3
     color: $web
   .project-wrapper
-    border: solid $web
+    border: 2px solid $web
     height: auto
     padding: 70px
     //padding-left:67px
@@ -133,24 +141,24 @@ nav.portfolio-nav
     color: $web
 
 
-/*Specify Mobile section*/
 
+/*Specify Mobile section*/
 .portfolio-mobile
   .portfolio-title h3
     color: $mobile
   .project-wrapper
-    border: solid $mobile
+    border: 2px solid $mobile
     height: auto
     padding: 30px 30px
     //padding-left:67px
   .project
     width: 90%
     margin: 15px auto
-    border: 1px solid rgba(58, 84, 101, .17)
-    border-radius: 15px
+    //border: 1px solid rgba(58, 84, 101, .17)
+    //border-radius: 15px
     padding: 15px
     img
-      border: solid #fff
+      border: solid rgba(255, 255, 255, 0)
       border-radius: 15px
     .project-hover
       background: rgba(58, 84, 101, .7)
@@ -159,4 +167,80 @@ nav.portfolio-nav
 
   .project:hover
     img
-      box-shadow: 0 18px 20px -10px rgba(0, 0, 0, .4)
+      border: solid #fff
+      box-shadow: 0 10px 15px -6px rgba(0, 0, 0, .4)
+
+
+/*Specify Landing section*/
+.portfolio-landing
+  .portfolio-title h3
+    color: $landing
+  .project-wrapper
+    border: 2px solid $landing
+    height: auto
+    padding: 65px 40px
+    //padding-left:67px
+  .project
+    width: 93%
+    margin: 20px auto
+    .project-hover
+      background: rgba(61, 57, 49, .7)
+  .load-more
+    color: $landing
+
+
+/*Specify branding section*/
+.portfolio-branding
+  .portfolio-title h3
+    color: $branding
+  .project-wrapper
+    border: 2px solid $branding
+    height: auto
+    padding: 65px 31px
+    //padding-left:67px
+    .row--no-gutter
+      margin: -3px 0
+  .project
+    .project-hover
+      background: rgba(0, 0, 0, .7)
+  .load-more
+    color: $branding
+
+
+
+/*Specify graphic section*/
+.portfolio-graphic
+  .portfolio-title h3
+    color: $graphic
+  .project-wrapper
+    border: 2px solid $graphic
+    height: auto
+    padding: 65px 31px
+    //padding-left:67px
+    .row--no-gutter
+      margin: -3px 0
+  .project
+    margin: 8px 0
+    .project-hover
+      background : rgba(222, 112, 60, 0.7)
+  .load-more
+    color : $graphic
+
+
+/*Specify flash section*/
+.portfolio-flash
+  .portfolio-title h3
+    color: $flash
+  .project-wrapper
+    border : 2px solid $flash
+    height: auto
+    padding: 70px
+    //padding-left:67px
+    .row--no-gutter
+      margin: -3px 0
+  .project
+    margin: 8px 0
+    .project-hover
+      background: rgba(255,48,79,.7)
+  .load-more
+    color: $flash

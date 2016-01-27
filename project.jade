@@ -9,15 +9,19 @@ html(lang="en")
       section.container.row
         nav.portfolio-nav
           ul
-            li: a(href="") web
-            li: a(href="") mobile
-            li: a(href="") landing
-            li: a(href="") branding
-            li: a(href="") graphics
+            li: a(href="#web") web
+            li: a(href="#mobile") mobile
+            li: a(href="#landing") landing
+            li: a(href="#branding") branding
+            li: a(href="#graphics") graphics
           
       section.main-container.portfolio-container.portfolio-wrapper
         include _include/portfolio/web
-        include _include/portfolio/mobile         
+        include _include/portfolio/mobile  
+        include _include/portfolio/landing
+        include _include/portfolio/branding 
+        include _include/portfolio/graphic
+        include _include/portfolio/flash       
           
           
                                

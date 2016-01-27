@@ -157,19 +157,42 @@ section.work-journey
 
 
 .footer
-  h5
-    letter-spacing: 3px
-    font-size: 1.2em
+  position: relative
 
-  .social-links
-    margin-top: 10px
-    a
-      font-size: .8em
-      letter-spacing: 2px
-      font-family: 'Lato', sans-serif
-      font-weight: 600
-      margin-right: 10px
-      opacity: .6
+  .footer-social-wrap
+    background: url(../media/images/footer-bg.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: bottom center
+    overflow: auto
+    position: relative
+    width: 100%
+    height: 500px
+    .footer-social
+      position: absolute
+      bottom: 30px
+      left: 150px
+  .copyright
+    height: 70px
+    background: #474747
+    padding-top:30px
+    h5
+      letter-spacing: 4px
+      font-size: 1.3em
+      color: rgba(255,255,255,.7)
+      font-family: $open-font
+      font-weight: 100
 
-      &:hover
-        opacity: 1
+    .social-links
+      margin-top: 20px
+      a
+        font-size: 1.2em
+        letter-spacing: 2px
+        font-family: $lato
+        font-weight: 300
+        margin-right: 10px
+        color: #fff
+        opacity: .6
+
+        &:hover
+          opacity: 1

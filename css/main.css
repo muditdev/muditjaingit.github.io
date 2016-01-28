@@ -1168,8 +1168,51 @@ section.work-journey article.journey h1 {
 
 .footer .footer-social-wrap .footer-social {
   position: absolute;
-  bottom: 30px;
-  left: 150px;
+  bottom: 20%;
+  left: 15%;
+}
+
+@media screen and (max-width: 700px) {
+  .footer .footer-social-wrap .footer-social {
+    left: 1%;
+  }
+}
+
+.footer .footer-social-wrap .footer-social h1 {
+  text-transform: uppercase;
+  color: #0971c8;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.footer .footer-social-wrap .footer-social .links {
+  margin: 2.5em;
+}
+
+.footer .footer-social-wrap .footer-social .links a {
+  color: red;
+  font-size: 1.5em;
+  font-family: "brandon", sans-serif;
+  font-weight: 600;
+  color: #006fd1;
+  margin: 0 15px;
+}
+
+.footer .footer-social-wrap .footer-social .email-me {
+  font-family: "brandon", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #494949;
+  border: solid #494949;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer .footer-social-wrap .footer-social .email-me {
+    border: 0px;
+  }
 }
 
 .footer .copyright {

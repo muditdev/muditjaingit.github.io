@@ -170,8 +170,38 @@ section.work-journey
     height: 500px
     .footer-social
       position: absolute
-      bottom: 30px
-      left: 150px
+      bottom: 20%
+      left: 15%
+      @media screen and (max-width: 700px)
+        left: 1%
+      h1
+        text-transform: uppercase
+        color: #0971c8
+        font-size: 2.5em
+        font-weight: 600
+      .links
+        margin: 2.5em
+        a
+          color: red
+          font-size: 1.5em
+          font-family: $lato
+          font-weight: 600
+          color: #006fd1
+          margin: 0 15px
+      .email-me
+        font-family: $lato
+        font-size: 1.5em
+        font-weight: 600
+        color: #494949
+        border:solid #494949
+        padding: 10px 50px
+        letter-spacing: 1px
+        line-height: 20px
+        @media screen and (max-width: 480px)
+          border:0px
+
+
+
   .copyright
     height: 70px
     background: #474747

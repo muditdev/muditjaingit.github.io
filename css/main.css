@@ -751,6 +751,7 @@ nav.portfolio-nav ul li a:hover {
   width: 100%;
   transition: all 1s;
   -webkit-filter: grayscale(0.9) contrast(0.6) brightness(1.15) opacity(0.9);
+  filter: grayscale(0.9) contrast(0.6) brightness(1.15) opacity(0.9);
 }
 
 .project .project-hover {
@@ -782,6 +783,7 @@ nav.portfolio-nav ul li a:hover {
 
 .project:hover img {
   -webkit-filter: grayscale(0) contrast(1);
+  filter: grayscale(0) contrast(1);
   -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
           transform: scale(1.03);

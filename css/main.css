@@ -1223,10 +1223,11 @@ section.work-journey article.journey h1 {
 
 .footer .copyright h5 {
   letter-spacing: 4px;
-  font-size: 1.3em;
+  font-size: 1em;
   color: rgba(255, 255, 255, 0.7);
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
+  line-height: 17px;
 }
 
 .footer .copyright .social-links {
@@ -1245,4 +1246,43 @@ section.work-journey article.journey h1 {
 
 .footer .copyright .social-links a:hover {
   opacity: 1;
+}
+
+/*importing responsive*/
+@media only screen and (min-width: 317px) and (max-width: 479px) {
+  /*About*/
+  .banner-content-about {
+    font-size: 9px;
+  }
+  .banner-content-about h1 {
+    font-size: 2em;
+  }
+  .banner-content-about h2 {
+    font-size: 3.5em;
+    padding: 7px 13px 15px 5px;
+  }
+  section.about-content .about-me-description {
+    padding-left: 0;
+    padding: 0 10px;
+  }
+  .work-journey .journey {
+    width: 94%;
+  }
+  /*portfolio*/
+  .banner-content-projects h1 {
+    display: inline-block;
+    border: 3px solid;
+    font-size: 3em;
+    letter-spacing: 7px;
+    padding: 17px 32px;
+  }
+  .banner-content-projects h2 {
+    font-size: 1.5em;
+  }
+  .portfolio-web .project-wrapper {
+    padding: 40px;
+  }
+  .portfolio-flash .project-wrapper {
+    padding: 40px;
+  }
 }

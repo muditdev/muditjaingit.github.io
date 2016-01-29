@@ -1,6 +1,7 @@
 @import "_include/grid"
 @import "_include/global"
 @import "_include/portfolio"
+
 //styling header
 .about-banner-bg
   background-image: url(../media/images/about-me-banner.jpg)
@@ -208,10 +209,11 @@ section.work-journey
     padding-top:30px
     h5
       letter-spacing: 4px
-      font-size: 1.3em
+      font-size: 1em
       color: rgba(255,255,255,.7)
       font-family: $open-font
       font-weight: 100
+      line-height: 17px
 
     .social-links
       margin-top: 20px
@@ -226,3 +228,6 @@ section.work-journey
 
         &:hover
           opacity: 1
+
+/*importing responsive*/
+@import "_include/responsive"

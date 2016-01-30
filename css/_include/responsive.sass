@@ -17,6 +17,8 @@
   .work-journey
     .journey
       width: 94%
+  .footer-social-wrap
+    height: 300px!important
 
   /*portfolio*/
   .banner-content-projects
@@ -38,12 +40,17 @@
   // portfolio-flash
   .portfolio-flash
     .project-wrapper
-      padding: 40px  
+      padding: 40px
 //tab
-//@media only screen and (min-width: 480px) and (max-width: 767px)
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  .footer-social-wrap
+    height: 250px!important
+  //big tab
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  .footer-social-wrap
+    height: 300px!important
 
-//big tab
-//@media only screen and (min-width: 768px) and (max-width: 991px)
-
-
-//@media only screen and (min-width: 992px) and (max-width: 1999px)
+@media only screen and (min-width: 992px) and (max-width: 1600px)
+  .footer-social-wrap
+    background-size: contain!important
+    height: 400px!important

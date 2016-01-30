@@ -61,7 +61,7 @@ nav.portfolio-nav
     width: 85%
 .portfolio
   font-size: 1.5em
-  margin-top: 200px
+  margin-top: 95px
   padding-top: 30px
 
 .portfolio-title
@@ -70,7 +70,7 @@ nav.portfolio-nav
   h3
     text-transform: uppercase
     margin-top: 40px
-    background: #fff
+    background: #F9FAFB
     display: inline-block
     padding: 10px 90px
     position: relative
@@ -86,7 +86,7 @@ nav.portfolio-nav
   img
     width: 100%
     transition: all 1s
-    -webkit-filter: grayscale(.9) contrast(0.6) brightness(1.15) opacity(.9)
+    -webkit-filter: grayscale(.7) contrast(0.8) brightness(1.2) opacity(.9)
     filter: grayscale(.9) contrast(0.6) brightness(1.15) opacity(.9)
 
   .project-hover
@@ -108,12 +108,12 @@ nav.portfolio-nav
       //border: 2px solid rgba(0, 0, 0, .9)
       transition: all 400ms
 .project:hover
-  cursor: pointer
   img
     -webkit-filter: grayscale(0) contrast(1)
     filter: grayscale(0) contrast(1)
     transform: scale(1.03)
   .project-hover
+    cursor: pointer
     top: 35%
     visibility: visible
     opacity: 1
@@ -164,7 +164,10 @@ nav.portfolio-nav
       border: solid rgba(255, 255, 255, 0)
       border-radius: 15px
     .project-hover
-      background: rgba(58, 84, 101, .7)
+      background: rgba(255,255,255,.7)
+      h3
+        color:#000
+        font-size: 12px
   .load-more
     color: $mobile
 

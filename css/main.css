@@ -719,7 +719,7 @@ nav.portfolio-nav ul li a:hover {
 
 .portfolio {
   font-size: 1.5em;
-  margin-top: 200px;
+  margin-top: 95px;
   padding-top: 30px;
 }
 
@@ -730,7 +730,7 @@ nav.portfolio-nav ul li a:hover {
 .portfolio-title h3 {
   text-transform: uppercase;
   margin-top: 40px;
-  background: #fff;
+  background: #F9FAFB;
   display: inline-block;
   padding: 10px 90px;
   position: relative;
@@ -750,7 +750,7 @@ nav.portfolio-nav ul li a:hover {
 .project img {
   width: 100%;
   transition: all 1s;
-  -webkit-filter: grayscale(0.9) contrast(0.6) brightness(1.15) opacity(0.9);
+  -webkit-filter: grayscale(0.7) contrast(0.8) brightness(1.2) opacity(0.9);
   filter: grayscale(0.9) contrast(0.6) brightness(1.15) opacity(0.9);
 }
 
@@ -777,10 +777,6 @@ nav.portfolio-nav ul li a:hover {
   transition: all 400ms;
 }
 
-.project:hover {
-  cursor: pointer;
-}
-
 .project:hover img {
   -webkit-filter: grayscale(0) contrast(1);
   filter: grayscale(0) contrast(1);
@@ -790,6 +786,7 @@ nav.portfolio-nav ul li a:hover {
 }
 
 .project:hover .project-hover {
+  cursor: pointer;
   top: 35%;
   visibility: visible;
   opacity: 1;
@@ -852,7 +849,12 @@ nav.portfolio-nav ul li a:hover {
 }
 
 .portfolio-mobile .project .project-hover {
-  background: rgba(58, 84, 101, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-mobile .project .project-hover h3 {
+  color: #000;
+  font-size: 12px;
 }
 
 .portfolio-mobile .load-more {
@@ -1158,14 +1160,16 @@ section.work-journey article.journey h1 {
 }
 
 .footer .footer-social-wrap {
+  margin-top: 30px;
   background: url(../media/images/footer-bg.jpg);
-  background-size: contain;
+  background-color: #fff !important;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
   overflow: auto;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 
 .footer .footer-social-wrap .footer-social {
@@ -1209,12 +1213,6 @@ section.work-journey article.journey h1 {
   padding: 10px 50px;
   letter-spacing: 1px;
   line-height: 20px;
-}
-
-@media screen and (max-width: 480px) {
-  .footer .footer-social-wrap .footer-social .email-me {
-    border: 0px;
-  }
 }
 
 .footer .copyright {
@@ -1270,6 +1268,9 @@ section.work-journey article.journey h1 {
   .work-journey .journey {
     width: 94%;
   }
+  .footer-social-wrap {
+    height: 300px !important;
+  }
   /*portfolio*/
   .banner-content-projects h1 {
     display: inline-block;
@@ -1286,5 +1287,24 @@ section.work-journey article.journey h1 {
   }
   .portfolio-flash .project-wrapper {
     padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-social-wrap {
+    height: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-social-wrap {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .footer-social-wrap {
+    background-size: contain !important;
+    height: 400px !important;
   }
 }

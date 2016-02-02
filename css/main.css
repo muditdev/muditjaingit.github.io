@@ -719,7 +719,7 @@ nav.portfolio-nav ul li a:hover {
 
 .portfolio {
   font-size: 1.5em;
-  margin-top: 95px;
+  margin-top: 100px;
   padding-top: 30px;
 }
 
@@ -749,9 +749,9 @@ nav.portfolio-nav ul li a:hover {
 
 .project img {
   width: 100%;
-  transition: all 1s;
-  -webkit-filter: grayscale(0.7) contrast(0.8) brightness(1.2) opacity(0.9);
-  filter: grayscale(0.9) contrast(0.6) brightness(1.15) opacity(0.9);
+  transition: all 1s ease-in-out;
+  -webkit-filter: grayscale(0.7) contrast(0.5) brightness(1.2) opacity(0.9);
+  filter: grayscale(0.7) contrast(0.5) brightness(1.2) opacity(0.9);
 }
 
 .project .project-hover {
@@ -786,13 +786,13 @@ nav.portfolio-nav ul li a:hover {
 }
 
 .project:hover .project-hover {
-  cursor: pointer;
   top: 35%;
   visibility: visible;
   opacity: 1;
 }
 
 .project:hover h3:hover {
+  cursor: pointer;
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
 }
 

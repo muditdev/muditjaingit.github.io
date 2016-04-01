@@ -640,6 +640,10 @@ a {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 .project-banner-bg {
   background-image: url(../media/images/portfolio-banner.jpg);
 }
@@ -965,6 +969,30 @@ nav.portfolio-nav ul li a:hover {
 
 .portfolio-flash .load-more {
   color: #ff304f;
+}
+
+nav.mobo-navigation {
+  display: none;
+  float: right;
+}
+
+nav.mobo-navigation .navTrigger {
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+}
+
+nav.mobo-navigation .navTrigger .nav-icon {
+  position: absolute;
+}
+
+nav.mobo-navigation .navTrigger .nav-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 2px;
 }
 
 .about-banner-bg {

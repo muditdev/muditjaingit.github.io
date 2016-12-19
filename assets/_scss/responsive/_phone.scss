@@ -1,0 +1,89 @@
+@include media($mobile-l) {
+  section.home-intro{
+    margin: 20px 0;
+    height: auto;
+    .intro-wrap{
+      position: static;
+      @include transform(none);
+    }
+  }
+  main.main-content{
+    margin-top: 100px;
+  }
+
+  .products{
+    padding: 0 10px;
+    // .product {
+    //   .prod-content{
+    //     width: 100%;
+    //   }
+    // }
+  }
+
+}//media ends
+
+
+@include media($mobile) {
+  header.main-header{
+    nav.main-nav{
+      & > ul{
+       display: none;
+      }
+    }
+  }// header.main-header ends
+
+  section.home-intro{
+    margin: 75px 0;
+    height: auto;
+    .intro-wrap{
+      position: static;
+      @include transform(none);
+    }
+    .intro-content{
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  section.welcome{
+
+  }
+  // project responsive -------------------------------
+  .projects{
+    .project{
+      .col{
+        height: auto;
+      }
+      .proj-des, .proj-img{
+        position: static!important;
+        @include transform(none!important);
+      }
+      .proj-des{
+        margin: 50px auto;
+      }
+      .proj-img{
+        margin: 0 auto -20px;
+        &.middle{
+          margin: 50px auto 0;
+        }
+      }
+    }
+  }
+  // product responsive -------------------------------
+
+
+  // mobo-footer---------------------------------------------------------
+
+  footer.main-footer{
+    .social{
+      li{
+        // min-width: 40%;
+      }
+    }
+  }
+
+  section.newsletter{
+
+  }
+}//media ends

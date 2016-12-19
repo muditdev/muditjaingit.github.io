@@ -1,0 +1,248 @@
+@import "buttons";
+
+// logo
+.logo{
+  background: $main-yellow;
+  border-radius: 50%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  @include size(100px);
+  overflow: hidden;
+}
+
+// navigation
+nav.main-nav{
+  li{
+    display: inline-block;
+    padding: 10px 20px;
+    a{
+      font-size: 1.1em;
+      font-weight: 700;
+      letter-spacing: .8px;
+      color: $dark-blue;
+      position: relative;
+      &:before{
+        content: '';
+        display: none;
+        width: 100%;
+        background: $main-yellow;
+        height: 4px;
+        position: absolute;
+        top: .65em;
+        z-index: -1;
+      }
+      &:hover{
+        color: gray;
+        &:before{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//title headings
+.bg-heading{
+  text-align: center;
+  position: relative;
+  &:before{
+    content: attr(data-bg-heading);
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    left: 0;
+    top: -75px;
+    line-height: 1.5;
+    font: {
+      size: 7em;
+      weight: 700;
+    }
+    color: rgba($gray, .075);
+    z-index: -1;
+    @include media($mobile-l) {
+      font-size: 3em;
+    }
+    @include media($mobile) {
+      font-size: 2em;
+      top: -50px;
+    }
+
+  }
+}
+
+
+//projects
+
+.projects{
+  .project{
+    margin: 20px 0;
+    width: 100%;
+    @include row;
+    text-align: center;
+    // height: 500px;
+    background: $projColor1;
+    .col{
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      @include span-columns(6);
+      @include media($mobile) {
+        @include span-columns(12);
+        height: 420px;
+      }
+    }
+    .proj-des{
+      @include both-center();
+      width: 75%;
+      max-width: 375px;
+      min-width: 285px;
+      h3.title{
+        color: $proj-title-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.25em;
+        margin: 0 0 20px 0;
+      }
+      .des{
+        color: $black;
+        letter-spacing: 1.5px;
+        font-size: .98em;
+        a{
+          color: $black;
+        }
+      }
+
+    }
+    .proj-img{
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 360px;
+      width: 80%;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+      &.middle{
+        @include both-center;
+        bottom: auto;
+      }
+    }
+  }
+}
+
+// products
+.products{
+  @include clearfix;
+  .product{
+    position: relative;
+    margin: 10px 0;
+    height: 500px;
+    border: 6px solid;
+    text-align: center;
+    &:nth-child(1){
+      border-color: $default-link-color;
+    }
+    &:nth-child(2){
+      border-color: $black;
+    }
+    &.col2{
+      @include span-columns(6);
+      @include media($mobile) {
+        width: 100%;
+      }
+    }
+    .prod-content{
+      width: 100%;
+      padding: 0 10px;
+      @include both-center;
+      .thumb{
+        svg{
+          width: 100%;
+        }
+      }
+      .title{
+        margin: 30px 0 12px 0;
+        color: $proj-title-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.25em;
+      }
+      .des{
+        color: $black;
+        letter-spacing: 1.5px;
+        font-size: .98em;
+        a{
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+
+// newsletter
+
+.newsletter{
+  padding: $c-pad;
+  @include outer-container(600px);
+  text-align: center;
+  margin-top: 100px;
+  figure.thumb{
+    max-width: 100px;
+    margin: auto;
+    svg{
+      width: 100%;
+    }
+  }
+  .nl-des{
+    font-size: 1.05em;
+    letter-spacing: 1.5px;
+    color: $dark-blue;
+    font-weight: 400;
+    span{
+      color: $orange;
+    }
+  }
+  .nl-input{
+    display: block;
+    max-width: 320px;
+    width: 95%;
+    margin: 25px auto;
+    position: relative;
+    input{
+      display: block;
+      text-align: center;
+      width: 100%;
+      outline: 0;
+      border: none;
+      line-height: 40px;
+      font-family: $primary-font;
+      font-size: 1em;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: $orange;
+      border-bottom: 3px solid rgba(0,0,0,.25);
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 0%;
+      height: 3px;
+      background: $orange;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all .3s ease-in;
+    }
+    &.active{
+      &:after{
+        width: 100%;
+      }
+    }
+   }
+}

@@ -1,0 +1,62 @@
+// main-header
+
+header.main-header{
+  @include outer-container;
+  .top-header{
+    position: relative;
+  }
+  .branding{
+  }
+  nav.main-nav{
+    @include v-center();
+    right: 0;
+  }
+}
+
+//main-footer
+
+footer.main-footer{
+  margin-top: 135px;
+  text-align: center;
+  .thanks{
+    margin-top: 20px;
+    padding: 0 $c-pad;
+    p{
+      max-width: 690px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.125em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1.8;
+      color: $gray;
+    }
+    &:before{
+      white-space: nowrap;
+    }
+    a{
+      color: $yellow;
+    }
+  }
+  .social{
+    margin-top: 50px;
+    ul{
+      li{
+        display: inline-block;
+        margin: 0 15px;
+        a{
+          color: $dark-blue;
+          font-weight: 600;
+          line-height: 1.85;
+        }
+      }
+    }
+  }
+  .copy{
+    padding: 20px 0;
+    font-style: italic;
+    font-size: .95em;
+    letter-spacing: .75px;
+    color: $gray;
+  }
+}

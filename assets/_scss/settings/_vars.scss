@@ -1,0 +1,32 @@
+// fonts
+$primary-font: 'Josefin Sans', sans-serif;
+
+// breakpoint
+$mobile: new-breakpoint(max-width 600px);
+$mobile-l: new-breakpoint(max-width 737px);
+
+// sizes
+$header-padding: 0px;
+$top-header-height: 100px;
+$header-banner-height: calc(100vh - 100px);
+
+// colors
+
+$main-yellow: #fffcb6;
+$orange: #fd8a80;
+$default-link-color:$orange ;
+$dark-blue: #566270;
+$gray: #888888;
+$pgray: #7a7a7a;
+$yellow: #d8cf00;
+$projColor1: #fffcb6;
+$black: #000;
+$proj-title-color: $black;
+
+// icon
+
+$default-icons-size : 50px;
+$default-icon-fill : $dark-blue;
+
+// pad
+$c-pad: 15px;

@@ -1,0 +1,87 @@
+header.main-header{
+  .top-header{
+    padding: 10px 10px 0;
+  }
+}
+
+// home intro
+section.home-intro{
+  height: $header-banner-height;
+  position: relative;
+  .intro-wrap{
+    width: 100%;
+    padding: $c-pad;
+    @include outer-container(720px);
+    @include both-center(absolute,45%);
+  }
+  figure.myAvtar{
+    text-align: center;
+    @include span-columns(4);
+    @include media($mobile) {
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  .intro-content{
+    @include span-columns(8);
+    h1.title{
+      font:{
+        weight: 700;
+        size: 3em;
+      }
+    color: $dark-blue;
+    }
+    h2.sub-title{
+      font:{
+        weight: 600;
+        size: 1.25em;
+        style: italic;
+      }
+      color: $gray;
+      margin: 0;
+      padding: 7px 0 0;
+    }
+    p.bio{
+      margin: 25px 0 20px;
+      color: $pgray;
+      line-height: 1.6;
+    }
+  }
+
+}
+
+
+// main content
+
+main.main-content{
+
+}
+section.welcome{
+  padding: 0 $c-pad;
+  font:{
+    weight: 600;
+    size: 1.05em;
+  }
+  color: $gray;
+  letter-spacing: 1px;
+  p{
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    a{
+      color: $yellow;
+    }
+  }
+}
+
+
+//projects
+
+section.proj-container{
+  @include outer-container();
+  margin-top: 35px;
+}

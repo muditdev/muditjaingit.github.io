@@ -1,0 +1,121 @@
+.btn{
+  display: inline-block;
+  background: transparent;
+  border: none;
+  font: {
+    family: $primary-font;
+    size: 1.125em;
+    weight: 600;
+  }
+  outline: 0!important;
+  cursor: pointer;
+  transition: all .35s ease;
+}
+
+
+.btn--icon-1{
+  // box-shadow: 0 0 0 2px $dark-blue inset;
+  border: 2px solid $dark-blue;
+  box-sizing: border-box;
+  color: $dark-blue;
+  border-radius: 150px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  padding: 0 30px 0 65px;
+  letter-spacing: 1px;
+  span.icon{
+    position: absolute;
+    margin: -.2px -1px;//firefox fix
+    padding: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    @include size(52px);
+    background: $dark-blue;
+    border-radius: 50%;
+    transition: all .2s ease;
+    svg{fill: #fff; width: 25px;}
+  }
+  &:hover{
+    background: $dark-blue;
+    color: #fff;
+    box-shadow: none;
+    span.icon{
+      animation: rotation 2s linear infinite ;
+      box-shadow: 0 0 0 2px $dark-blue;
+      background: #fff;
+      svg{
+        fill: $dark-blue;
+      }
+    }
+  }
+}
+
+.btn--icon-2{
+  background: $gray;
+  min-width: 160px;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: -2px 2px 0 1px $orange;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    &.icon{
+      width: 30px;
+      padding: 0 4px 0 0;
+      svg{
+        fill: #fff;
+      }
+    }
+    &.btn-text{
+      letter-spacing: 1.5px;
+    }
+  }
+  &:hover{
+    box-shadow: 0 0 2px 0 $orange;
+    background: $orange;
+  }
+}
+
+
+a.link-more{
+  text-align: center;
+  transition: all .5s ease;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: $default-link-color;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+  &:after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentColor;
+    margin: auto;
+    margin-top: 10px;
+    transition: all .5s;
+  }
+  &:hover{
+    letter-spacing: 1.5px;
+    &:after{
+      width: 30px;
+      // animation: line-resize 2s linear infinite;
+    }
+  }
+}
+
+
+
+
+
+
+
+@keyframes rotation {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.08)}
+  100%{transform: scale(1)}
+}

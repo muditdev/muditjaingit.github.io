@@ -1,8 +1,12 @@
 // main-header
 
 header.main-header{
-  @include outer-container;
+  background-image: url(../images/topo_bg.jpg);
+  // background-size: contain;
+  background-position: center center;
+  margin-bottom: 50px;
   .top-header{
+    @include outer-container;
     position: relative;
   }
   .branding{

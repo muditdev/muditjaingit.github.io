@@ -1141,15 +1141,18 @@ nav.main-nav li {
       width: 100%; }
 
 header.main-header {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  header.main-header::after {
-    clear: both;
-    content: "";
-    display: block; }
+  background-image: url(../images/topo_bg.jpg);
+  background-position: center center;
+  margin-bottom: 50px; }
   header.main-header .top-header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative; }
+    header.main-header .top-header::after {
+      clear: both;
+      content: "";
+      display: block; }
   header.main-header nav.main-nav {
     position: absolute;
     top: 50%;

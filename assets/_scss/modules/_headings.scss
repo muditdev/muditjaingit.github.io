@@ -1,0 +1,18 @@
+section.welcome{
+  padding: 0 $c-pad;
+  font:{
+    weight: 600;
+    size: 1.05em;
+  }
+  color: $gray;
+  letter-spacing: 1px;
+  p{
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    a{
+      color: $yellow;
+    }
+  }
+}

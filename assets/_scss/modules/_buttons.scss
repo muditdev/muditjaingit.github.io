@@ -78,6 +78,46 @@
   }
 }
 
+.btn-3{
+  color: $btn-yellow;
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(0,0,0,.1);
+  text-align: center;
+  position: relative;
+  min-width: 160px;
+  padding: 15px 17px;
+  // height: 48px;
+  // line-height: 48px;
+  &.sl{
+    width: 350px;
+    max-width: 95%;
+  }
+  &.c-dark{
+    color: $black;
+    &:after{
+      background: $black;
+    }
+  }
+  &:after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 30%;
+    background: $btn-yellow;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%)  ;
+    transition: all .5s;
+  }
+  &:hover{
+    border: 1px solid rgba(0,0,0,.2);
+    letter-spacing: 2px;
+    &:after{
+      width: 30%;
+    }
+  }
+}
 
 a.link-more{
   text-align: center;
@@ -107,11 +147,6 @@ a.link-more{
     }
   }
 }
-
-
-
-
-
 
 
 @keyframes rotation {

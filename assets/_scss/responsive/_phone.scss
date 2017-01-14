@@ -71,6 +71,25 @@
     }
   }
   // product responsive -------------------------------
+  // service responsive -------------------------------
+  .services{
+    .service{
+      .col{
+        height: auto;
+      }
+      .ser-des, .ser-img{
+        position: static!important;
+        @include transform(none!important);
+      }
+      .ser-des{
+        margin: 50px auto;
+      }
+      .ser-img{
+        margin: 50px auto 0;
+      }
+    }
+  }
+  // product responsive -------------------------------
 
 
   // mobo-footer---------------------------------------------------------

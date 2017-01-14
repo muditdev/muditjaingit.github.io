@@ -1,15 +1,11 @@
 $(document).ready(function(){
-    projectColor();
     nlInput();
+    blocksBg();
+    // setting background over scroll
+    $(window).scroll(blocksBg);
 });
 
-function projectColor(){
-  var colors = ['#fffcb6', '#dcffb6', '#a6e3e9', '#faf3df'];
-  var $projects = $('.project').not('.product');
-  for(i = 0; i<$projects.length; i++ ){
-      $projects.eq(i).css('background-color', colors[i]);
-    }
-  }
+
 
 function nlInput(){
   $('.nl-input input').on('focus', function(){
@@ -21,3 +17,29 @@ function nlInput(){
     }
   });
 }
+
+
+//project product and service block background -------------------
+function blocksBg() {
+  // prevent to run if element not exist
+  if($('[data-bgcolor]').length){
+    var topScroll = $(window).scrollTop();
+    var topOffset = $('[data-bgcolor]').parent().offset().top;
+    var offsetTolr = $(window).innerHeight()/2;
+      // running each function on project product and service block
+      console.log(offsetTolr);
+      $('[data-bgcolor]').each(function(i){
+        var $block = $(this);
+        var bgColor = $(this).data('bgcolor');
+
+        if(topScroll > topOffset - offsetTolr ){
+          setTimeout(function(){
+            $block.css({
+              'background-color': bgColor,
+              'opacity' : 1
+            });
+          }, i*400);
+        }//if statement ends
+      });//each event ends
+  }
+}//blocksBg function ends

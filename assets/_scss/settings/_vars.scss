@@ -4,6 +4,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 // breakpoint
 $mobile: new-breakpoint(max-width 600px);
 $mobile-l: new-breakpoint(max-width 737px);
+$tablet: new-breakpoint(max-width 1024px);
 
 // sizes
 $header-padding: 0px;
@@ -11,7 +12,7 @@ $top-header-height: 100px;
 $header-banner-height: calc(100vh - 100px);
 
 // colors
-
+$white: #fff;
 $main-yellow: #fffcb6;
 $orange: #fd8a80;
 $default-link-color:$orange ;
@@ -22,6 +23,9 @@ $yellow: #d8cf00;
 $projColor1: #fffcb6;
 $black: #000;
 $proj-title-color: $black;
+$btn-gray: #888888;
+$btn-yellow: #CDC73B;
+$black: #000;
 
 // icon
 

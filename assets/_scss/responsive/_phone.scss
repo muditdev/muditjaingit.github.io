@@ -26,6 +26,11 @@
 @include media($mobile) {
   header.main-header{
     nav.main-nav{
+      position: fixed;
+      @include transform(none);
+      top: 20px;
+      padding: 10px;
+      z-index: 9;
       & > ul{
        display: none;
       }

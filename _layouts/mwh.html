@@ -5,7 +5,51 @@ layout: compress
 <!DOCTYPE html>
 <html ng-app="mwhApp">
     {% include head.html %}
-    <body ng-controller="MainCtrl">
+    <body ng-controller="MainCtrl" class="">
+      <div class="mobileNavWrap">
+        <div class="mobileNav-content">
+          <header class="mn-header">
+            <div class="mn-image" style="background-image: url({{ site.baseurl }}assets/images/mudit.jpg)">
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/svg/myavtar.svg" alt="">
+                </a>
+              </div>
+            </div>
+
+
+
+          </header>
+
+          <div class="mn-content">
+            <nav class="mn-nav">
+              <ul>
+                <li>
+                  <a>&nbsp;</a>
+                </li>
+                <li>
+                  <a href="#">services</a>
+                </li>
+                <li>
+                  <a href="#">projects</a>
+                </li>
+                <li>
+                  <a href="#">products</a>
+                </li>
+                <li>
+                  <a href="#">blog</a>
+                </li>
+                <li>
+                  <a href="#">shop</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+
+      </div>
 
         {{ content }}
 

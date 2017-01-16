@@ -1,5 +1,6 @@
 @import "buttons";
 @import "headings";
+@import "mobileMenu";
 
 // logo
 .logo{
@@ -9,6 +10,10 @@
   box-sizing: border-box;
   @include size(100px);
   overflow: hidden;
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 // main content

@@ -13,15 +13,19 @@ header.main-header{
   }
   .branding{
   }
-  nav.main-nav{
-    @include v-center();
-    right: 0;
-  }
+
   &.subpg{
     background-image: none;
     @include box-shadow(none);
     margin-bottom: 150px;
   }
+}
+
+// main navigation
+
+nav.main-nav{
+  @include v-center();
+  right: 0;
 }
 
 //main-footer

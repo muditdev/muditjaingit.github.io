@@ -16,6 +16,7 @@ section.home-intro{
   }
   figure.myAvtar{
     text-align: center;
+    background: url(../svg/avtarbg.svg) no-repeat center -45px;
     @include span-columns(4);
     @include media($mobile) {
       width: 100%;

@@ -3390,7 +3390,7 @@ section.welcome {
   .mobileNavWrap .mobileNav-content header.mn-header {
     background-color: #fff500;
     position: relative;
-    height: 35vh; }
+    height: 40vh; }
     .mobileNavWrap .mobileNav-content header.mn-header .mn-image {
       max-width: 100%;
       height: 100%;
@@ -3408,11 +3408,16 @@ section.welcome {
       -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
       -ms-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-      z-index: 9; }
+      z-index: 9;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      .mobileNavWrap .mobileNav-content header.mn-header .logo.show {
+        opacity: 1; }
   .mobileNavWrap .mobileNav-content .mn-content .mn-nav a {
     display: block;
     text-align: center;
-    line-height: 60px;
+    line-height: 10vh;
     display: none;
     color: rgba(0, 0, 0, 0.75);
     font-size: 1.14em;

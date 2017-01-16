@@ -53,9 +53,17 @@ function mobileNav(){
       $(".trigger").addClass("cross");
       $('body').addClass("mmOpen");
       navEleEffect();
+      setTimeout(function(){
+        $('.mn-header .logo').addClass('show');
+        $('.mn-header .logo').addClass('animated zoomIn');
+      }, 1000);
     }
     else {
       clearAni();
+      setTimeout(function(){
+        $('.mn-header .logo').removeClass('show');
+        $('.mn-header .logo').removeClass('animated zoomIn');
+      }, 1000);
       $(".trigger").removeClass("cross");
       $('body').removeClass("mmOpen");
     }

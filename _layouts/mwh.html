@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html ng-app="mwhApp">
+<html ng-app="mwhApp" ng-strict-di>
     {% include head.html %}
     <body ng-controller="MainCtrl" class="">
       <div class="mobileNavWrap">
@@ -28,19 +28,19 @@ layout: compress
                   <a>&nbsp;</a>
                 </li>
                 <li>
-                  <a href="#">services</a>
+                  <a href="#/services">services</a>
                 </li>
                 <li>
-                  <a href="#">projects</a>
+                  <a href="#/projects">projects</a>
                 </li>
                 <li>
-                  <a href="#">products</a>
+                  <a href="#/products">products</a>
                 </li>
                 <li>
-                  <a href="#">blog</a>
+                  <a>blog</a>
                 </li>
                 <li>
-                  <a href="#">shop</a>
+                  <a>shop</a>
                 </li>
 
               </ul>

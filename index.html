@@ -2,17 +2,16 @@
 layout: mwh
 title: Mudit Jain | designer, developer, thinker
 ---
-<header class="main-header">
+<header class="main-header" ng-class="{subpg : !isHome}">
   {% include topHeader.html %}
-
-  <section class="home-intro"><!--home intro starts -->
+  <section class="home-intro" data-ng-if="isHome"><!--home intro starts -->
     <div class="intro-wrap">
       <figure class="myAvtar">
         <img src="{{site.baseurl}}assets/svg/myavtar.svg" alt="" />
       </figure>
       <div class="intro-content">
         <h1 class="title">mudit jain</h1>
-        <h2 class="sub-title">user interaction engineer</h2>
+        <h2 class="sub-title">user interaction engineer </h2>
         <p class="bio">
           I'm mudit, Front-end developer and a weird guy who likes making weird things with web technologies. <br>
           I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
@@ -30,9 +29,11 @@ title: Mudit Jain | designer, developer, thinker
   </section><!--home intro ends -->
 </header>
 
+<div ng-view ></div>
 
 <main class="main-content">
-  {% include home_main_content.html %}
+  <!-- main view -->
+  <!-- main view -->
 </main>
 
 <!-- newsletter -->

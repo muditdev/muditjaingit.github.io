@@ -94,4 +94,16 @@ function mobileNav(){
     }, 1000)
 
   }
+
+
+  //closing with link click
+  $('.mn-nav li a').click(function(){
+    clearAni();
+    setTimeout(function(){
+      $('.mn-header .logo').removeClass('show');
+      $('.mn-header .logo').removeClass('animated zoomIn');
+    }, 1000);
+    $(".trigger").removeClass("cross");
+    $('body').removeClass("mmOpen");
+  });
 }

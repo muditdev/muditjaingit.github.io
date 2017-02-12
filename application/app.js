@@ -1,4 +1,4 @@
-var myApp = angular.module('mwhApp', ['ngRoute'], function($interpolateProvider) {
+var myApp = angular.module('mwhApp', ['ngRoute', 'ngSanitize'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('{(');
     $interpolateProvider.endSymbol(')}');
   })
@@ -23,3 +23,15 @@ myApp.run(function ($rootScope, $location) {
     }
   });
 })
+
+
+
+myApp.filter('renderHTML', function($sce){
+	return function(stringToParse){
+    // var myhtml = $sce.trustAsHtml(stringToParse);
+    var myhtml = stringToParse;
+    var decodedHTML = $('<div/>').html(myhtml).text();
+    // console.log(stringToParse);
+		return decodedHTML;
+	}
+});

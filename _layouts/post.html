@@ -1,9 +1,67 @@
 ---
-layout: default
+layout: compress
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<!DOCTYPE html>
+<html ng-app="mwhApp" ng-strict-di>
+    {% include head.html %}
+    <body ng-controller="MainCtrl" class="">
+      <div class="mobileNavWrap">
+        <div class="mobileNav-content">
+
+          <header class="mn-header">
+            <div class="mn-image" style="background-image: url({{ site.baseurl }}assets/images/mudit.jpg)">
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/svg/myavtar.svg" alt="">
+                </a>
+              </div>
+            </div>
+
+          </header>
+
+          <div class="mn-content">
+            <nav class="mn-nav">
+              <ul>
+                <li>
+                  <a>&nbsp;</a>
+                </li>
+                <li>
+                  <a href="#/services">services</a>
+                </li>
+                <li>
+                  <a href="#/projects">projects</a>
+                </li>
+                <li>
+                  <a href="#/products">products</a>
+                </li>
+                <li>
+                  <a>blog</a>
+                </li>
+                <li>
+                  <a>shop</a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+      <header class="main-header" ng-class="{subpg : !isHome}">
+        {% include topHeader.html %}
+      </header>
+
+
+      <h2>{{ page.title }}</h2>
+      <p class="meta">{{ page.date | date_to_string }}</p>
+
+      <div class="post">
+      {{ content }}
+      </div>
+
+
+
+    {% include scripts.html %}
+    </body>
+</html>

@@ -3,3 +3,4 @@ markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: /
+permalink: blog/:title/

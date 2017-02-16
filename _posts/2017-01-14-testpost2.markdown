@@ -2,7 +2,8 @@
 layout: post
 title:  "testPost 2!"
 date:   2017-01-14 09:11:03
-categories: jekyll update
+categories: Designer_Life
+
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

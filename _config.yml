@@ -4,3 +4,4 @@ highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: /
 permalink: posts/:title/
+include : ["_redirects"]

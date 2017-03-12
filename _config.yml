@@ -1,7 +1,7 @@
 name: Your New Jekyll Site
 markdown: kramdown
 highlighter: rouge
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "projects", "services", "products"]
 baseurl: /
 permalink: posts/:title/
 include : ["_redirects"]

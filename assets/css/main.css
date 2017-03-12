@@ -4149,6 +4149,15 @@ header.blog-header {
         .blogPosts-container .blogPost .post-actions .love svg {
           fill: #d65a49; }
 
+.post-container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+  .post-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
 @media screen and (max-width: 737px) {
   section.home-intro {
     margin: 20px 0;
